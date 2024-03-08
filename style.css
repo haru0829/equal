@@ -19,7 +19,7 @@
 
     header h1 {
         font-family: "Homemade Apple";
-        font-size:24px;
+        font-size: 24px;
     }
 
     h2 {
@@ -245,6 +245,12 @@
         font-weight: 800;
     }
 
+    h2 {
+        text-align: center;
+        font-size: 48px;
+        font-family: "Homemade Apple";
+    }
+
     .entitle {
         padding-left: 80px;
         background-color: #d2a36c;
@@ -341,8 +347,7 @@
 }
 
 main h3,main p,dt,dd{
-    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体',
-    sans-serif;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ＭＳ 明朝', 'MS Mincho',sans-serif;
 }
 
 img {
