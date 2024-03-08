@@ -1,0 +1,442 @@
+/* スマホ */
+@media screen and (max-width: 650px) {
+
+    /*ここにスマホ用のCSSを記述する*/
+    h1 {
+        color: yellow;
+    }
+
+    header {
+        width: 100%;
+        height: 80px;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        line-height: 80px;
+    }
+
+    header li,
+    header img {
+        display: none;
+    }
+
+    header h1 {
+        font-family: "Homemade Apple";
+    }
+
+    .entitle {
+        padding-left: 80px;
+        background-color: #d2a36c;
+        opacity: 0.8;
+        color: white;
+        font-size: 20px;
+        max-width: 700px;
+    }
+
+    .jatitle {
+        font-size: 24px;
+        margin-top: 12px;
+        padding-left: 80px;
+    }
+
+    #mainvisual div {
+        display: none;
+    }
+
+    .child1,.child2{
+        margin: 0 auto;
+        min-width: 350px;
+        max-width: 400px;
+    }
+}
+
+/* タブレット */
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
+
+    /*ここにタブレット用のCSSを記述する*/
+    header {
+        width: 100%;
+        height: 80px;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        line-height: 80px;
+    }
+
+    header h1 {
+        width: 20%;
+        padding-left: 40px;
+        font-family: "Homemade Apple";
+    }
+
+    header ul {
+        width: 20%;
+        display: flex;
+        gap: 72px;
+        justify-content: center;
+        margin: auto 0;
+        font-weight: 800;
+    }
+
+    header h1 {
+        width: 30%;
+    }
+
+    h1 {
+        color: blue;
+    }
+
+    .entitle {
+        padding-left: 80px;
+        background-color: #d2a36c;
+        opacity: 0.8;
+        color: white;
+        font-size: 24px;
+        max-width: 700px;
+    }
+
+    .jatitle {
+        font-size: 32px;
+        margin-top: 12px;
+        padding-left: 80px;
+    }
+
+    #mainvisual div {
+        position: absolute;
+        bottom: 150px;
+        line-height: 70px;
+    }
+
+    .child1,.child2{
+        margin: 0 auto;
+        min-width: 350px;
+        max-width: 400px;
+    }
+}
+
+/* パソコン */
+@media screen and (min-width: 1024px) {
+
+    /*ここにPC用のCSSを記述する*/
+    header {
+        width: 100%;
+        height: 80px;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        line-height: 80px;
+    }
+
+    header h1 {
+        width: 40%;
+        padding-left: 40px;
+        font-family: "Homemade Apple";
+    }
+
+    header ul {
+        width: 20%;
+        display: flex;
+        gap: 72px;
+        justify-content: center;
+        margin: auto 0;
+        font-weight: 800;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    .entitle {
+        padding-left: 80px;
+        background-color: #d2a36c;
+        opacity: 0.8;
+        color: white;
+        font-size: 30px;
+        max-width: 700px;
+    }
+
+    .jatitle {
+        font-size: 48px;
+        margin-top: 12px;
+        padding-left: 80px;
+    }
+
+    #mainvisual div {
+        position: absolute;
+        bottom: 150px;
+        line-height: 70px;
+    }
+
+    .parent {
+        display: flex;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    .child1 {
+        width: 45%;
+        min-width: 350px;
+        max-width: 400px;
+    }
+
+    .child2 {
+        width: 45%;
+        max-width: 350px;
+        min-width: 400px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins";
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+a {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Homemade Apple";
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#mainvisual {
+    max-height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+#mainvisual h1 {
+    height: 70px;
+    color: white;
+}
+
+#about {
+    padding-top: 56px;
+    padding-bottom: 64px;
+    position: relative;
+}
+
+#about h2::before {
+    content: "";
+    background-color: black;
+    display: block;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 120px;
+    background-color: #736357;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 0;
+}
+
+#product h2::before {
+    content: "";
+    background-color: black;
+    display: block;
+    width: 240px;
+    height: 50px;
+    position: absolute;
+    top: 120px;
+    background-color: #736357;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 0;
+}
+
+#news h2::before {
+    content: "";
+    background-color: black;
+    display: block;
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 105px;
+    background-color: #736357;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 0;
+}
+
+#about p {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+#product {
+    padding-top: 54px;
+    padding-bottom: 56px;
+    position: relative;
+}
+
+#product p {
+    font-size: 14px;
+}
+
+.itemmenu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    padding-bottom: 40px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.item p {
+    width: 100%;
+    text-align: left;
+}
+
+.button {
+    display: block;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 32px auto;
+    border-radius: 30px;
+    background-color: #322E2A;
+    color: white;
+    outline: 2px solid #322E2A;
+    outline-offset: -2px;
+}
+
+.button:hover {
+    background: white;
+    color: #322E2A;
+    transition: .5s;
+}
+
+#news {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    position: relative;
+}
+
+#text {
+    margin: 0 auto;
+    padding-top: 32px;
+    width: 60%;
+    max-width: 600px;
+}
+
+#text dt {
+    font-size: 16px;
+    border-bottom: solid 1px black;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#text dd {
+    padding-top: 8px;
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #736357;
+    height: 400px;
+    color: white;
+}
+
+footer div {
+    margin: 0 auto;
+    max-width:800px;
+}
+
+footer ul {
+    line-height: 360px;
+    height: 360px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+.zoom-box {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.zoom-box img {
+    display: block;
+    transition-duration: .5s;
+}
+
+.zoom-box img:hover {
+    transform: scale(1.2);
+}
+
+.fadeUpTrigger {
+    opacity: 0;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
